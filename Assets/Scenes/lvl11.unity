@@ -245,6 +245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 331697147}
   - component: {fileID: 331697148}
+  - component: {fileID: 331697149}
   m_Layer: 0
   m_Name: Middleground
   m_TagString: Untagged
@@ -283,6 +284,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 2.5, y: 2.5}
+  direction: {x: -1, y: 0}
+  isLinkedToCamera: 0
+  isLooping: 0
+--- !u!114 &331697149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331697146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b77b244136b5b41987b690fc7c2fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 5, y: 5}
   direction: {x: -1, y: 0}
   isLinkedToCamera: 0
   isLooping: 0
@@ -553,6 +570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 679764443}
+  - component: {fileID: 679764444}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -577,6 +595,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &679764444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679764442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b77b244136b5b41987b690fc7c2fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 10, y: 10}
+  direction: {x: -1, y: 0}
+  isLinkedToCamera: 0
+  isLooping: 1
 --- !u!1001 &745635923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -907,6 +941,11 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: -4
       objectReference: {fileID: 0}
+    - target: {fileID: 8299149739715750717, guid: 2a81576a1f7d65f40a2b32ce37a4b2ae,
+        type: 3}
+      propertyPath: isLooping
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a81576a1f7d65f40a2b32ce37a4b2ae, type: 3}
 --- !u!4 &1064282200 stripped
@@ -925,7 +964,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1203888100}
   - component: {fileID: 1203888099}
-  - component: {fileID: 1203888101}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -989,28 +1027,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203888098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.9805527, y: 0.7556928, z: 0.11712471}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.989, y: -1.503, z: 0.11712471}
+  m_LocalScale: {x: 2.1678758, y: 1.219778, z: 1}
   m_Children: []
   m_Father: {fileID: 679764443}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1203888101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1203888098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7b77b244136b5b41987b690fc7c2fd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: 1, y: 1}
-  direction: {x: -1, y: 0}
-  isLinkedToCamera: 0
-  isLooping: 1
 --- !u!1001 &1288501305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1231,6 +1253,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8487179560004531810, guid: 393116632e1d21f4ebb17b28a2bef02f,
+        type: 3}
+      propertyPath: isLooping
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 393116632e1d21f4ebb17b28a2bef02f, type: 3}
